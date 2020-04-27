@@ -29,6 +29,20 @@
       <dmn:typeRef>Task</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
+  <dmn:itemDefinition id="_9262E2B2-D80D-4A39-9A0A-5B3F04C669E6" name="TaskActorAssignment" isCollection="false">
+    <dmn:itemComponent id="_981F8A3E-006B-4829-8F50-FBB78BAF651D" name="escalationChannel" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_4C18D223-253B-4CEA-875A-3C74DE4D89A8" name="channel" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_89D734F7-FE72-4FAC-BCA5-BF7ED3202217" name="escalationActor" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_7AA3F539-FCA9-47E9-8286-D7561079A3AB" name="actor" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:itemDefinition id="_FBFBC808-42CB-49C2-89E8-C36651B19FA2" name="Task" isCollection="false">
     <dmn:itemComponent id="_127C7F46-F0E3-4D03-8031-C215FEE0C9FF" name="status" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
@@ -73,20 +87,6 @@
       <dmn:typeRef>string</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:itemDefinition id="_9262E2B2-D80D-4A39-9A0A-5B3F04C669E6" name="TaskActorAssignment" isCollection="false">
-    <dmn:itemComponent id="_981F8A3E-006B-4829-8F50-FBB78BAF651D" name="escalationChannel" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_4C18D223-253B-4CEA-875A-3C74DE4D89A8" name="channel" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_89D734F7-FE72-4FAC-BCA5-BF7ED3202217" name="escalationActor" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
-    </dmn:itemComponent>
-    <dmn:itemComponent id="_7AA3F539-FCA9-47E9-8286-D7561079A3AB" name="actor" isCollection="false">
-      <dmn:typeRef>string</dmn:typeRef>
-    </dmn:itemComponent>
-  </dmn:itemDefinition>
   <dmn:itemDefinition id="_295383FB-5AA3-4BAE-A215-7928C37E4953" name="Trigger" isCollection="false">
     <dmn:itemComponent id="_9DA68179-63A2-4343-8F15-2FEE1867E630" name="memberId" isCollection="false">
       <dmn:typeRef>string</dmn:typeRef>
@@ -97,7 +97,7 @@
   </dmn:itemDefinition>
   <dmn:decision id="_98C86BB1-F9BE-4254-8431-F0E4912996DA" name="Task">
     <dmn:extensionElements/>
-    <dmn:variable id="_63CEC179-162D-45E2-AB9B-1961541C5C04" name="Task" typeRef="Task"/>
+    <dmn:variable id="_63CEC179-162D-45E2-AB9B-1961541C5C04" name="Task"/>
     <dmn:informationRequirement id="_B59580CE-1582-4709-9CB4-2FCDD32E6C39">
       <dmn:requiredInput href="#_9BAD1290-1BCC-43F0-B98F-3FEB5ABBD5D2"/>
     </dmn:informationRequirement>
@@ -114,6 +114,7 @@
       </dmn:input>
       <dmn:output id="_32AE9B57-7D2B-4A34-9F37-2917C0AD594F" name="id" typeRef="number"/>
       <dmn:output id="_20493724-B0F5-4A6F-AF6E-FA8826F22ACD" name="origId" typeRef="string"/>
+      <dmn:output id="_CEE3279F-5530-4EDA-8835-DDEB22E5E599" name="suppressed" typeRef="boolean"/>
       <dmn:rule id="_090F45E7-9A46-43C6-841D-118203C22C28">
         <dmn:inputEntry id="_3A465888-8375-40EB-B363-1B5C8E393D69">
           <dmn:text>"123"</dmn:text>
@@ -126,6 +127,9 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_D984492C-F4FD-4F3C-9DD1-04AC476F5D12">
           <dmn:text>"A490.0"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_E6DB4116-5D6E-4C13-A5B2-35CE5FAB9E57">
+          <dmn:text>FALSE</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_3FC1D1E9-1CA9-4CB2-A1DC-5B3FD4450572">
@@ -141,6 +145,9 @@
         <dmn:outputEntry id="_42E076A1-6EF8-4345-8CB1-72F82E46DA04">
           <dmn:text>"B143"</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_178CEF91-A404-4387-A268-81EA790103CD">
+          <dmn:text>FALSE</dmn:text>
+        </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_AEF11500-065C-4232-B493-2C5735069DBC">
         <dmn:inputEntry id="_42963B9C-0D3C-4A9A-B59F-ABD011234D42">
@@ -155,6 +162,9 @@
         <dmn:outputEntry id="_1131F4E4-97C8-4A30-A32A-824AFE572009">
           <dmn:text>"C201"</dmn:text>
         </dmn:outputEntry>
+        <dmn:outputEntry id="_67D0DE95-2A4B-45BB-8BE8-77269C32F37E">
+          <dmn:text>FALSE</dmn:text>
+        </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_08302717-B670-4ACD-B23D-CD5AD0945087">
         <dmn:inputEntry id="_C1D052F7-CD6D-4238-8884-405BDF10C8DD">
@@ -168,6 +178,9 @@
         </dmn:outputEntry>
         <dmn:outputEntry id="_F49533A3-242D-4172-992A-1F22C2BD030D">
           <dmn:text>"C178"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_182CB694-2AD5-4978-AEEE-A861C97D3F18">
+          <dmn:text>FALSE</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
@@ -186,6 +199,7 @@
             <kie:width>175.0</kie:width>
             <kie:width>204.0</kie:width>
             <kie:width>204.0</kie:width>
+            <kie:width>100.0</kie:width>
             <kie:width>298.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
