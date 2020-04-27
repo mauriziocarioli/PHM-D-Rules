@@ -129,7 +129,7 @@
           <dmn:text>"A490.0"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_E6DB4116-5D6E-4C13-A5B2-35CE5FAB9E57">
-          <dmn:text>FALSE</dmn:text>
+          <dmn:text>F</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_3FC1D1E9-1CA9-4CB2-A1DC-5B3FD4450572">
@@ -146,7 +146,7 @@
           <dmn:text>"B143"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_178CEF91-A404-4387-A268-81EA790103CD">
-          <dmn:text>FALSE</dmn:text>
+          <dmn:text>F</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_AEF11500-065C-4232-B493-2C5735069DBC">
@@ -163,7 +163,7 @@
           <dmn:text>"C201"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_67D0DE95-2A4B-45BB-8BE8-77269C32F37E">
-          <dmn:text>FALSE</dmn:text>
+          <dmn:text>F</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_08302717-B670-4ACD-B23D-CD5AD0945087">
@@ -180,7 +180,7 @@
           <dmn:text>"C178"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_182CB694-2AD5-4978-AEEE-A861C97D3F18">
-          <dmn:text>FALSE</dmn:text>
+          <dmn:text>F</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
