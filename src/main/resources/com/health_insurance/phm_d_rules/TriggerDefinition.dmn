@@ -105,7 +105,7 @@
     <dmn:informationRequirement id="_2D025B02-B961-4F34-928A-01982297BA06">
       <dmn:requiredInput href="#_4E22A7A0-5A19-4E6A-A4EB-55A534271EFD"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_3CE67F44-48F1-4C02-850F-2F4DA7967A75" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_3CE67F44-48F1-4C02-850F-2F4DA7967A75" hitPolicy="COLLECT" preferredOrientation="Rule-as-Row">
       <dmn:input id="_F70AC2FF-9883-4689-822A-2436EF52D3DA">
         <dmn:inputExpression id="_14C3EFBC-9FDC-4E9B-B9DB-BCCBA8184F52" typeRef="string">
           <dmn:text>Trigger.memberId</dmn:text>
@@ -121,10 +121,10 @@
       <dmn:output id="_1E9AB423-E60F-4173-905E-DDE85721269A" name="reminder" typeRef="Reminder"/>
       <dmn:rule id="_BE0CA29B-5E41-4476-9BDD-A57DA4A14387">
         <dmn:inputEntry id="_7A88D06F-8C49-4916-A518-88E891632E1D">
-          <dmn:text>-</dmn:text>
+          <dmn:text>"123"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_181DD70F-43CD-48A5-9F3A-10C987D8F8B8">
-          <dmn:text>-</dmn:text>
+          <dmn:text>74</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AB47F100-1773-42FE-819F-98F55BF0EF2D">
           <dmn:text></dmn:text>
