@@ -117,6 +117,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_FB3CF4A7-C9DA-4D5B-B78D-A9218D17D769" name="task" typeRef="Task"/>
+      <dmn:output id="_0DC933DA-3655-4D7E-9649-C4812F388A4C" name="output-1"/>
       <dmn:output id="_DBBC28D5-7117-4F3B-9F7B-FFFF2902E922" name="assignment" typeRef="TaskActorAssignment"/>
       <dmn:output id="_1E9AB423-E60F-4173-905E-DDE85721269A" name="reminder" typeRef="Reminder"/>
       <dmn:rule id="_BE0CA29B-5E41-4476-9BDD-A57DA4A14387">
@@ -127,6 +128,9 @@
           <dmn:text>74</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AB47F100-1773-42FE-819F-98F55BF0EF2D">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+        <dmn:outputEntry id="_DF0F81CA-5FAA-464B-953E-E73E567225E7">
           <dmn:text></dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_1AC78CB5-B472-4CE6-923A-78FA66D4C41F">
@@ -147,6 +151,7 @@
             <kie:width>151.0</kie:width>
             <kie:width>137.0</kie:width>
             <kie:width>204.0</kie:width>
+            <kie:width>100.0</kie:width>
             <kie:width>134.0</kie:width>
             <kie:width>157.0</kie:width>
             <kie:width>153.0</kie:width>
