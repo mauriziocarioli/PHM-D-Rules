@@ -95,13 +95,13 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:decision id="_80DAEFD1-BA22-4682-B1A1-2C98AC8F0331" name="tTask">
+  <dmn:decision id="_80DAEFD1-BA22-4682-B1A1-2C98AC8F0331" name="Task">
     <dmn:extensionElements/>
-    <dmn:variable id="_19DE22BA-B63C-499A-B4CA-BE30F4C55314" name="tTask" typeRef="Task"/>
+    <dmn:variable id="_19DE22BA-B63C-499A-B4CA-BE30F4C55314" name="Task" typeRef="Task"/>
     <dmn:decisionTable id="_BAD983FF-41F1-4464-8C75-02EDD14B0405" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_F8A87D67-6DB7-439D-9249-2E338B8DE67A">
         <dmn:inputExpression id="_072D62A2-632B-4C23-9D9E-A7A77CD7CECC" typeRef="Trigger">
-          <dmn:text>tTrigger</dmn:text>
+          <dmn:text>Trigger</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_F246460D-D41C-4BB8-A15E-B9B5F5F7FC72" typeRef="Task"/>
