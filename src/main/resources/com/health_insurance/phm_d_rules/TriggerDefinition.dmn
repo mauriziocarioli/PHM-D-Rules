@@ -95,11 +95,47 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
+  <dmn:decision id="_80DAEFD1-BA22-4682-B1A1-2C98AC8F0331" name="tTask">
+    <dmn:extensionElements/>
+    <dmn:variable id="_19DE22BA-B63C-499A-B4CA-BE30F4C55314" name="tTask" typeRef="Task"/>
+    <dmn:decisionTable id="_BAD983FF-41F1-4464-8C75-02EDD14B0405" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_F8A87D67-6DB7-439D-9249-2E338B8DE67A">
+        <dmn:inputExpression id="_072D62A2-632B-4C23-9D9E-A7A77CD7CECC" typeRef="Trigger">
+          <dmn:text>tTrigger</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_F246460D-D41C-4BB8-A15E-B9B5F5F7FC72" typeRef="Task"/>
+      <dmn:rule id="_89B0689A-56BA-4436-A264-922F57636F69">
+        <dmn:inputEntry id="_2D481FAA-48C4-409D-94D6-215BB8AF5253">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_4B4327A8-5B21-41DF-A957-786104CD112E">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_BAD983FF-41F1-4464-8C75-02EDD14B0405">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-_80DAEFD1-BA22-4682-B1A1-2C98AC8F0331" dmnElementRef="_80DAEFD1-BA22-4682-B1A1-2C98AC8F0331" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="389" y="216" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
