@@ -129,7 +129,7 @@
           <dmn:text>"A490.0"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_E6DB4116-5D6E-4C13-A5B2-35CE5FAB9E57">
-          <dmn:text>F</dmn:text>
+          <dmn:text>false</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_3FC1D1E9-1CA9-4CB2-A1DC-5B3FD4450572">
