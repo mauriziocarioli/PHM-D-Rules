@@ -106,11 +106,6 @@
       <dmn:requiredInput href="#_5C7311EC-0CD9-46F1-B1FC-0A2C77000256"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_915BA0EC-9A87-42E5-83EC-C3678E70298C" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_19F38FB9-DF42-45CF-809A-C1E2BA385A52">
-        <dmn:inputExpression id="_00EC4C71-9738-47FA-A211-0C1D72960B0D" typeRef="string">
-          <dmn:text>Trigger.memberId</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
       <dmn:input id="_68E22488-F450-416F-B36F-E2833A480D46">
         <dmn:inputExpression id="_FCFDD560-95CA-490E-8881-50255D4855C7" typeRef="number">
           <dmn:text>Trigger.triggerId</dmn:text>
@@ -122,9 +117,6 @@
       <dmn:output id="_7C3A7899-2AD1-4FBA-975D-4E30D4B8D825" name="Response.assignment.actor" typeRef="string"/>
       <dmn:output id="_4B11AA44-B6FC-4BE1-BBD6-BEB90B9996AD" name="Response.reminder.address" typeRef="string"/>
       <dmn:rule id="_F33F57D6-9552-4ECC-B0DF-EDB20FBD56F9">
-        <dmn:inputEntry id="_C6C68778-A9EF-4D82-98CF-27715A6142CD">
-          <dmn:text>"xyz"</dmn:text>
-        </dmn:inputEntry>
         <dmn:inputEntry id="_E5F0A408-0CC0-43BF-97FF-3A0060EB3AFA">
           <dmn:text>74</dmn:text>
         </dmn:inputEntry>
@@ -152,7 +144,6 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_915BA0EC-9A87-42E5-83EC-C3678E70298C">
             <kie:width>50.0</kie:width>
-            <kie:width>165.0</kie:width>
             <kie:width>130.0</kie:width>
             <kie:width>171.0</kie:width>
             <kie:width>163.0</kie:width>
