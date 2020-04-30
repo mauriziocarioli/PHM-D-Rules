@@ -95,87 +95,29 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_5C7311EC-0CD9-46F1-B1FC-0A2C77000256" name="Trigger">
-    <dmn:extensionElements/>
-    <dmn:variable id="_A8F2F71F-47B9-413A-8201-958B2EECAAA6" name="Trigger" typeRef="Trigger"/>
-  </dmn:inputData>
-  <dmn:decision id="_B1C64AE1-97F2-41EC-8823-5CC9C96AA3DC" name="Response">
-    <dmn:extensionElements/>
-    <dmn:variable id="_2873081F-001C-4250-B356-1D462B8FAD2C" name="Response" typeRef="Response"/>
-    <dmn:informationRequirement id="_C9B12444-BCA5-47D5-BD10-FC5FBA55A0F2">
-      <dmn:requiredInput href="#_5C7311EC-0CD9-46F1-B1FC-0A2C77000256"/>
-    </dmn:informationRequirement>
-    <dmn:decisionTable id="_915BA0EC-9A87-42E5-83EC-C3678E70298C" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_68E22488-F450-416F-B36F-E2833A480D46">
-        <dmn:inputExpression id="_FCFDD560-95CA-490E-8881-50255D4855C7" typeRef="number">
-          <dmn:text>Trigger.triggerId</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_0C3671EB-B350-47FC-881C-BB4B253F2406" name="Response.Task.id" typeRef="number"/>
-      <dmn:output id="_6D84E8C1-13E5-495A-81D9-EBC4E59AF061" name="Response.Task.origId" typeRef="string"/>
-      <dmn:output id="_C2A7297A-DBAF-401B-B466-9AC7E093B8D8" name="Response.Task.suppressed" typeRef="boolean"/>
-      <dmn:output id="_7C3A7899-2AD1-4FBA-975D-4E30D4B8D825" name="Response.TaskActorAssignmen.actor" typeRef="string"/>
-      <dmn:output id="_4B11AA44-B6FC-4BE1-BBD6-BEB90B9996AD" name="Response.Reminder.address" typeRef="string"/>
-      <dmn:rule id="_F33F57D6-9552-4ECC-B0DF-EDB20FBD56F9">
-        <dmn:inputEntry id="_E5F0A408-0CC0-43BF-97FF-3A0060EB3AFA">
-          <dmn:text>74</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_6230BD0D-4EDE-4D68-8188-AD86303BBBF1">
-          <dmn:text>35</dmn:text>
-        </dmn:outputEntry>
-        <dmn:outputEntry id="_27B85ADD-4BAC-4634-A020-A3E395F8575D">
-          <dmn:text>"A490.0"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:outputEntry id="_E489B343-501B-4342-8CA3-E2FE40D62897">
-          <dmn:text>false</dmn:text>
-        </dmn:outputEntry>
-        <dmn:outputEntry id="_C3E21086-D462-484B-9D0E-7543ED7580DE">
-          <dmn:text>"Peter"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:outputEntry id="_253B7420-7596-435E-9020-C4EB282E7F41">
-          <dmn:text>"peter@doctor.com"</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
-  </dmn:decision>
+  <dmn:itemDefinition id="_DAC43561-A6DD-4AAD-8E8F-C0362B0304E4" name="A" isCollection="false">
+    <dmn:itemComponent id="_9D596E63-F3E1-4E89-BEF2-B271608975BE" name="a" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_3A6D0404-2A26-46A1-A0FD-75AEB463FE19" name="B" isCollection="false">
+    <dmn:itemComponent id="_316CAE12-EFED-423C-A980-A36E67CED7F7" name="b" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_246F4727-D4B0-43EA-B590-D42BA6C4E8C5" name="C" isCollection="false">
+    <dmn:itemComponent id="_A9E9C6D5-6E01-4F03-A41B-07437E82193B" name="a" isCollection="false">
+      <dmn:typeRef>A</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_0ABEDB5B-6309-4A6A-A735-50228EDC29E6" name="b" isCollection="false">
+      <dmn:typeRef>B</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_915BA0EC-9A87-42E5-83EC-C3678E70298C">
-            <kie:width>50.0</kie:width>
-            <kie:width>130.0</kie:width>
-            <kie:width>171.0</kie:width>
-            <kie:width>163.0</kie:width>
-            <kie:width>197.0</kie:width>
-            <kie:width>247.0</kie:width>
-            <kie:width>218.0</kie:width>
-            <kie:width>390.0</kie:width>
-          </kie:ComponentWidths>
-        </kie:ComponentsWidthsExtension>
+        <kie:ComponentsWidthsExtension/>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_5C7311EC-0CD9-46F1-B1FC-0A2C77000256" dmnElementRef="_5C7311EC-0CD9-46F1-B1FC-0A2C77000256" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="201" y="138" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_B1C64AE1-97F2-41EC-8823-5CC9C96AA3DC" dmnElementRef="_B1C64AE1-97F2-41EC-8823-5CC9C96AA3DC" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="381" y="138" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_C9B12444-BCA5-47D5-BD10-FC5FBA55A0F2" dmnElementRef="_C9B12444-BCA5-47D5-BD10-FC5FBA55A0F2">
-        <di:waypoint x="301" y="163"/>
-        <di:waypoint x="381" y="163"/>
-      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
