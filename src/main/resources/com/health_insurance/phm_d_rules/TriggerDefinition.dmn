@@ -129,13 +129,13 @@
       <dmn:output id="_CDA15C6F-D448-4C8C-8559-19B33F23DB19" name="C.b.b" typeRef="number"/>
       <dmn:rule id="_1D6A7BB9-254C-4793-89CC-D8548F042996">
         <dmn:inputEntry id="_A074A844-8053-4EC3-8970-1C49FFBE081D">
-          <dmn:text>-</dmn:text>
+          <dmn:text>1</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_F0F5F53B-683B-4F7A-B2A2-CBB9479CFB27">
-          <dmn:text></dmn:text>
+          <dmn:text>2</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_611A0EA9-D5AD-4D7E-800B-718DE12C9C90">
-          <dmn:text></dmn:text>
+          <dmn:text>3</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
