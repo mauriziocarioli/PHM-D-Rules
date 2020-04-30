@@ -113,9 +113,9 @@
       <dmn:typeRef>B</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:decision id="_35356C9B-313C-490E-8597-9E581CA0B6F1" name="C.a.a">
+  <dmn:decision id="_35356C9B-313C-490E-8597-9E581CA0B6F1" name="C">
     <dmn:extensionElements/>
-    <dmn:variable id="_A349F460-FA4B-4263-ABF2-C5EAA06D4ED2" name="C.a.a" typeRef="number"/>
+    <dmn:variable id="_A349F460-FA4B-4263-ABF2-C5EAA06D4ED2" name="C" typeRef="C"/>
     <dmn:informationRequirement id="_DF28D719-E5A9-4FFA-96D4-0C082B1215B8">
       <dmn:requiredInput href="#_387B2208-7F05-404C-A975-0B9967D83B00"/>
     </dmn:informationRequirement>
