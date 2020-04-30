@@ -99,9 +99,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_A8F2F71F-47B9-413A-8201-958B2EECAAA6" name="Trigger" typeRef="Trigger"/>
   </dmn:inputData>
-  <dmn:decision id="_B1C64AE1-97F2-41EC-8823-5CC9C96AA3DC" name="Response.Task.id">
+  <dmn:decision id="_B1C64AE1-97F2-41EC-8823-5CC9C96AA3DC" name="Response">
     <dmn:extensionElements/>
-    <dmn:variable id="_2873081F-001C-4250-B356-1D462B8FAD2C" name="Response.Task.id" typeRef="number"/>
+    <dmn:variable id="_2873081F-001C-4250-B356-1D462B8FAD2C" name="Response" typeRef="Response"/>
     <dmn:informationRequirement id="_C9B12444-BCA5-47D5-BD10-FC5FBA55A0F2">
       <dmn:requiredInput href="#_5C7311EC-0CD9-46F1-B1FC-0A2C77000256"/>
     </dmn:informationRequirement>
