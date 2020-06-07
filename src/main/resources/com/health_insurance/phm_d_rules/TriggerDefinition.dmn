@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<dmn11:definitions xmlns:dmn11="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="http://www.healthinsurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f" xmlns:openapi="https://openapis.org/omg/extension/1.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:drools="http://www.drools.org/kie/dmn/1.2" xmlns:tc="http://www.omg.org/spec/DMN/20160719/testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rss="http://purl.org/rss/2.0/" xmlns:trisodmn="http://www.healthinsurance.com/2016/triso/dmn" xmlns:trisofeed="http://healthinsurance.com/feed" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:triso="http://www.healthinsurance.com/2015/triso/modeling" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_84e63e93-8a4f-4846-8052-702b4df7566f" name="TriggerDefinition" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="http://www.health_insurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f">
+<dmn11:definitions xmlns:dmn11="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="http://www.health_insurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f" xmlns:openapi="https://openapis.org/omg/extension/1.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:drools="http://www.drools.org/kie/dmn/1.2" xmlns:tc="http://www.omg.org/spec/DMN/20160719/testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rss="http://purl.org/rss/2.0/" xmlns:trisodmn="http://www.healthinsurance.com/2016/triso/dmn" xmlns:trisofeed="http://healthinsurance.com/feed" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:triso="http://www.healthinsurance.com/2015/triso/modeling" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_84e63e93-8a4f-4846-8052-702b4df7566f" name="TriggerDefinition" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="http://www.health_insurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f">
   <dmn11:extensionElements/>
   <dmn11:itemDefinition id="_EB0E2B72-0C72-4A8B-A9C3-36ECA3BF277F" name="Insert a name" isCollection="false"/>
   <dmn11:itemDefinition id="_C3091EC7-0DD5-46EB-8BFF-1429A00433BE" name="Reminder" isCollection="false">
@@ -181,7 +181,7 @@
           <dmn11:text>"peter@doctor.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_9445b7da-1c8d-46eb-a2c4-a344034fa79f">
-          <dmn11:text>"PHM@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"PHM@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_e8aa7b89-0208-4fd4-96d8-174312565aa9">
           <dmn11:text>"Reminder"</dmn11:text>
@@ -237,10 +237,10 @@
           <dmn11:text>"Marc"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_4bf387b4-0e43-443a-a84a-2c3d6a9f821d">
-          <dmn11:text>"charlie@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"charlie@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_e47bace1-a83a-48ec-833e-70b2deb7c924">
-          <dmn11:text>"PHM@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"PHM@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_19c41aed-b088-458c-8168-30aa28b405e6">
           <dmn11:text>"Reminder"</dmn11:text>
@@ -299,7 +299,7 @@
           <dmn11:text>"mary@mail.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_003d43b2-f920-4be5-a981-b450eeaeeb91">
-          <dmn11:text>"PHM@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"PHM@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_a1ecf553-7658-472f-b3e1-f9511ec8735b">
           <dmn11:text>"Reminder"</dmn11:text>
@@ -355,10 +355,10 @@
           <dmn11:text>"Matthew"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_3e1fdbad-df4b-474b-9a23-c7374a7a6d05">
-          <dmn11:text>"robert@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"robert@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_8fbacae7-bd1d-4b4e-a94f-8e91bb344927">
-          <dmn11:text>"PHM@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"PHM@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_8d51ddb4-e113-4126-b77c-033a6376e620">
           <dmn11:text>"Reminder"</dmn11:text>
@@ -414,10 +414,10 @@
           <dmn11:text>"Matthew"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_9fe1c212-3aa3-48b5-bfd5-b8e9e77f1c5e">
-          <dmn11:text>"robert@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"robert@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_a4ff8fea-7746-42e0-b114-f22689322667">
-          <dmn11:text>"PHM@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"PHM@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_6a871c57-3265-4d2a-b4e7-624b8efb6083">
           <dmn11:text>"Reminder"</dmn11:text>
@@ -473,10 +473,10 @@
           <dmn11:text>"Alison"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_58b2f3ea-f911-448c-8412-934c90639345">
-          <dmn11:text>"alison@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"alison@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_b79245ed-437b-4ed7-af36-c27855b93952">
-          <dmn11:text>"PHM@healthinsurance.com"</dmn11:text>
+          <dmn11:text>"PHM@health_insurance.com"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_9b46c6c4-d132-4871-a34a-59e95e641277">
           <dmn11:text>"Reminder"</dmn11:text>
