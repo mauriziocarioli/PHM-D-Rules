@@ -1,145 +1,136 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dmn11:definitions xmlns="http://www.healthinsurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f" xmlns:drools="http://www.drools.org/kie/dmn/1.1" xmlns:feel="http://www.omg.org/spec/FEEL/20140401" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:openapi="https://openapis.org/omg/extension/1.0" xmlns:rss="http://purl.org/rss/2.0/" xmlns:tc="http://www.omg.org/spec/DMN/20160719/testcase" xmlns:triso="http://www.healthinsurance.com/2015/triso/modeling" xmlns:trisodmn="http://www.healthinsurance.com/2016/triso/dmn" xmlns:trisofeed="http://healthinsurance.com/feed" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exporter="Decision Modeler" exporterVersion="6.11.0" id="_84e63e93-8a4f-4846-8052-702b4df7566f" name="TriggerDefinition" namespace="http://www.healthinsurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f" triso:logoChoice="Default" xmlns:dmn11="http://www.omg.org/spec/DMN/20151101/dmn.xsd">
-  <dmn11:extensionElements>
-    <drools:decisionServices>
-      <dmn11:decisionService id="_84e63e93-8a4f-4846-8052-702b4df7566f_DS" name="Whole Model Decision Service" triso:dynamicDecisionService="true" triso:wholeModelService="true">
-        <dmn11:outputDecision href="#_0A900ACC-C5C2-47DD-B7E1-3F198824C02A"/>
-        <dmn11:inputData href="#_4E22A7A0-5A19-4E6A-A4EB-55A534271EFD"/>
-      </dmn11:decisionService>
-      <dmn11:decisionService id="_00facb1c-387a-4b9f-aeb1-26cc566f1ec8_DS" name="Diagram Page 1" triso:dynamicDecisionService="true">
-        <dmn11:outputDecision href="#_0A900ACC-C5C2-47DD-B7E1-3F198824C02A"/>
-        <dmn11:inputData href="#_4E22A7A0-5A19-4E6A-A4EB-55A534271EFD"/>
-      </dmn11:decisionService>
-    </drools:decisionServices>
-  </dmn11:extensionElements>
-  <dmn11:itemDefinition id="_EB0E2B72-0C72-4A8B-A9C3-36ECA3BF277F" isCollection="false" label="Insert a name" name="Insert a name"/>
-  <dmn11:itemDefinition id="_C3091EC7-0DD5-46EB-8BFF-1429A00433BE" isCollection="false" label="Reminder" name="Reminder">
-    <dmn11:itemComponent id="_3AA660D4-A589-4550-AB09-D793153A0F52" isCollection="false" name="body">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+<?xml version='1.0' encoding='UTF-8'?>
+<dmn11:definitions xmlns:dmn11="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="http://www.healthinsurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f" xmlns:openapi="https://openapis.org/omg/extension/1.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:drools="http://www.drools.org/kie/dmn/1.2" xmlns:tc="http://www.omg.org/spec/DMN/20160719/testcase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rss="http://purl.org/rss/2.0/" xmlns:trisodmn="http://www.healthinsurance.com/2016/triso/dmn" xmlns:trisofeed="http://healthinsurance.com/feed" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:triso="http://www.healthinsurance.com/2015/triso/modeling" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_84e63e93-8a4f-4846-8052-702b4df7566f" name="TriggerDefinition" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="http://www.healthinsurance.com/definitions/_84e63e93-8a4f-4846-8052-702b4df7566f">
+  <dmn11:extensionElements/>
+  <dmn11:itemDefinition id="_EB0E2B72-0C72-4A8B-A9C3-36ECA3BF277F" name="Insert a name" isCollection="false"/>
+  <dmn11:itemDefinition id="_C3091EC7-0DD5-46EB-8BFF-1429A00433BE" name="Reminder" isCollection="false">
+    <dmn11:itemComponent id="_3AA660D4-A589-4550-AB09-D793153A0F52" name="body" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_40C3C683-8489-4FB9-9BEE-C750909C97AF" isCollection="false" name="from">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+    <dmn11:itemComponent id="_40C3C683-8489-4FB9-9BEE-C750909C97AF" name="from" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_92E6AE87-586C-4BC8-BACD-B553679FD586" isCollection="false" name="subject">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+    <dmn11:itemComponent id="_92E6AE87-586C-4BC8-BACD-B553679FD586" name="subject" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_579D9C44-5389-459B-A524-00C67E128742" isCollection="false" name="address">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+    <dmn11:itemComponent id="_579D9C44-5389-459B-A524-00C67E128742" name="address" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
   </dmn11:itemDefinition>
-  <dmn11:itemDefinition id="_3594314F-9D53-48A2-BBD9-68E00C0F5861" isCollection="false" label="Response" name="Response">
-    <dmn11:itemComponent id="_7138CA4E-33D0-451B-9D0F-AEB1CFBE4D5D" isCollection="false" name="assignment">
+  <dmn11:itemDefinition id="_3594314F-9D53-48A2-BBD9-68E00C0F5861" name="Response" isCollection="false">
+    <dmn11:itemComponent id="_7138CA4E-33D0-451B-9D0F-AEB1CFBE4D5D" name="assignment" isCollection="false">
       <dmn11:typeRef>TaskActorAssignment</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_759CD518-BC29-4FED-8F2A-6BC637A03206" isCollection="false" name="reminder">
+    <dmn11:itemComponent id="_759CD518-BC29-4FED-8F2A-6BC637A03206" name="reminder" isCollection="false">
       <dmn11:typeRef>Reminder</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_CD2F659B-5B38-4B2D-8245-67637ACCB925" isCollection="false" name="task">
+    <dmn11:itemComponent id="_CD2F659B-5B38-4B2D-8245-67637ACCB925" name="task" isCollection="false">
       <dmn11:typeRef>Task</dmn11:typeRef>
     </dmn11:itemComponent>
   </dmn11:itemDefinition>
-  <dmn11:itemDefinition id="_9262E2B2-D80D-4A39-9A0A-5B3F04C669E6" isCollection="false" label="TaskActorAssignment" name="TaskActorAssignment">
-    <dmn11:itemComponent id="_981F8A3E-006B-4829-8F50-FBB78BAF651D" isCollection="false" name="escalationChannel">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+  <dmn11:itemDefinition id="_9262E2B2-D80D-4A39-9A0A-5B3F04C669E6" name="TaskActorAssignment" isCollection="false">
+    <dmn11:itemComponent id="_981F8A3E-006B-4829-8F50-FBB78BAF651D" name="escalationChannel" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_4C18D223-253B-4CEA-875A-3C74DE4D89A8" isCollection="false" name="channel">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+    <dmn11:itemComponent id="_4C18D223-253B-4CEA-875A-3C74DE4D89A8" name="channel" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_89D734F7-FE72-4FAC-BCA5-BF7ED3202217" isCollection="false" name="escalationActor">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+    <dmn11:itemComponent id="_89D734F7-FE72-4FAC-BCA5-BF7ED3202217" name="escalationActor" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_7AA3F539-FCA9-47E9-8286-D7561079A3AB" isCollection="false" name="actor">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-  </dmn11:itemDefinition>
-  <dmn11:itemDefinition id="_FBFBC808-42CB-49C2-89E8-C36651B19FA2" isCollection="false" label="Task" name="Task">
-    <dmn11:itemComponent id="_127C7F46-F0E3-4D03-8031-C215FEE0C9FF" isCollection="false" name="status">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_863ACC46-9320-4252-A7DD-B02FFEBC1812" isCollection="false" name="expirationDate">
-      <dmn11:typeRef>feel:dateTime</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_E3812106-609A-4912-9E51-AC382F2481CD" isCollection="false" name="origId">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_2636697E-0F48-4604-AB9E-AAD397B5794A" isCollection="false" name="close">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_6545A73F-137A-48A0-9477-40C453530270" isCollection="false" name="suppressed">
-      <dmn11:typeRef>feel:boolean</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_0F069678-4D84-49EB-99A3-EF719D58CDB1" isCollection="false" name="id">
-      <dmn11:typeRef>feel:number</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_F11A28F7-754C-48DD-A951-04E75F9A94C6" isCollection="false" name="reminderInitiation">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_912AED8B-FEFE-4400-ABE4-AA2AC9911E55" isCollection="false" name="reminderFrequency">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_2C69AC9C-0C49-49A7-A9CC-910453021875" isCollection="false" name="closeSignal">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_CE7FB402-1E40-4F9C-9015-421806EDE364" isCollection="false" name="predecessor">
-      <dmn11:typeRef>feel:number</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_ECD5CA0C-3EBE-42F5-8C82-7F3316FD694F" isCollection="false" name="description">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_5E7618C6-87E1-47A1-8644-E6DDC80E5FDC" isCollection="false" name="escalated">
-      <dmn11:typeRef>feel:boolean</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_74CCC96C-9AE0-43C1-99B6-23002BF9ADAA" isCollection="false" name="suppressionPeriod">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
-    </dmn11:itemComponent>
-    <dmn11:itemComponent id="_6F739593-8843-4061-88D4-C7E9B6AB2CE4" isCollection="false" name="escalationTimer">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+    <dmn11:itemComponent id="_7AA3F539-FCA9-47E9-8286-D7561079A3AB" name="actor" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
   </dmn11:itemDefinition>
-  <dmn11:itemDefinition id="_295383FB-5AA3-4BAE-A215-7928C37E4953" isCollection="false" label="Trigger" name="Trigger">
-    <dmn11:itemComponent id="_9DA68179-63A2-4343-8F15-2FEE1867E630" isCollection="false" name="memberId">
-      <dmn11:typeRef>feel:string</dmn11:typeRef>
+  <dmn11:itemDefinition id="_FBFBC808-42CB-49C2-89E8-C36651B19FA2" name="Task" isCollection="false">
+    <dmn11:itemComponent id="_127C7F46-F0E3-4D03-8031-C215FEE0C9FF" name="status" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
     </dmn11:itemComponent>
-    <dmn11:itemComponent id="_C6A9EE4F-C0DD-4C5A-A721-763C2BCD2679" isCollection="false" name="triggerId">
-      <dmn11:typeRef>feel:number</dmn11:typeRef>
+    <dmn11:itemComponent id="_863ACC46-9320-4252-A7DD-B02FFEBC1812" name="expirationDate" isCollection="false">
+      <dmn11:typeRef>dateTime</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_E3812106-609A-4912-9E51-AC382F2481CD" name="origId" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_2636697E-0F48-4604-AB9E-AAD397B5794A" name="close" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_6545A73F-137A-48A0-9477-40C453530270" name="suppressed" isCollection="false">
+      <dmn11:typeRef>boolean</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_0F069678-4D84-49EB-99A3-EF719D58CDB1" name="id" isCollection="false">
+      <dmn11:typeRef>number</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_F11A28F7-754C-48DD-A951-04E75F9A94C6" name="reminderInitiation" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_912AED8B-FEFE-4400-ABE4-AA2AC9911E55" name="reminderFrequency" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_2C69AC9C-0C49-49A7-A9CC-910453021875" name="closeSignal" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_CE7FB402-1E40-4F9C-9015-421806EDE364" name="predecessor" isCollection="false">
+      <dmn11:typeRef>number</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_ECD5CA0C-3EBE-42F5-8C82-7F3316FD694F" name="description" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_5E7618C6-87E1-47A1-8644-E6DDC80E5FDC" name="escalated" isCollection="false">
+      <dmn11:typeRef>boolean</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_74CCC96C-9AE0-43C1-99B6-23002BF9ADAA" name="suppressionPeriod" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_6F739593-8843-4061-88D4-C7E9B6AB2CE4" name="escalationTimer" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+  </dmn11:itemDefinition>
+  <dmn11:itemDefinition id="_295383FB-5AA3-4BAE-A215-7928C37E4953" name="Trigger" isCollection="false">
+    <dmn11:itemComponent id="_9DA68179-63A2-4343-8F15-2FEE1867E630" name="memberId" isCollection="false">
+      <dmn11:typeRef>string</dmn11:typeRef>
+    </dmn11:itemComponent>
+    <dmn11:itemComponent id="_C6A9EE4F-C0DD-4C5A-A721-763C2BCD2679" name="triggerId" isCollection="false">
+      <dmn11:typeRef>number</dmn11:typeRef>
     </dmn11:itemComponent>
   </dmn11:itemDefinition>
   <dmn11:inputData id="_4E22A7A0-5A19-4E6A-A4EB-55A534271EFD" name="Trigger">
+    <dmn11:extensionElements/>
     <dmn11:variable id="_6FA4AB93-D2AA-435B-919E-FBF0C869B1C3" name="Trigger" typeRef="Trigger"/>
   </dmn11:inputData>
-  <dmn11:decision id="_0A900ACC-C5C2-47DD-B7E1-3F198824C02A" name="Response" triso:useOutputTypeAsAnswer="false">
+  <dmn11:decision id="_0A900ACC-C5C2-47DD-B7E1-3F198824C02A" name="Response">
+    <dmn11:extensionElements/>
     <dmn11:variable id="_7B1377D7-E1B1-472B-94BC-1814506C7537" name="Response" typeRef="Response"/>
-    <dmn11:informationRequirement>
+    <dmn11:informationRequirement id="_8772D2DD-B655-40F8-A085-15054F00DFE3">
       <dmn11:requiredInput href="#_4E22A7A0-5A19-4E6A-A4EB-55A534271EFD"/>
     </dmn11:informationRequirement>
-    <dmn11:decisionTable hitPolicy="COLLECT" id="_3CE67F44-48F1-4C02-850F-2F4DA7967A75" outputLabel="Response" triso:expressionId="_f0d0305b-750e-46e4-8b1a-2842fc36b42a" typeRef="Response">
-      <dmn11:input id="_F70AC2FF-9883-4689-822A-2436EF52D3DA" label="Trigger.memberId">
-        <dmn11:inputExpression typeRef="feel:string">
+    <dmn11:decisionTable id="_3CE67F44-48F1-4C02-850F-2F4DA7967A75" typeRef="Response" hitPolicy="COLLECT" preferredOrientation="Rule-as-Row" outputLabel="Response">
+      <dmn11:input id="_F70AC2FF-9883-4689-822A-2436EF52D3DA">
+        <dmn11:inputExpression id="_79A22B9D-880C-4B86-884D-22E84F036A21" typeRef="string">
           <dmn11:text>Trigger.memberId</dmn11:text>
         </dmn11:inputExpression>
       </dmn11:input>
-      <dmn11:input id="_23472B97-94C7-4907-9559-403D2CBDA714" label="Trigger.triggerId">
-        <dmn11:inputExpression typeRef="feel:number">
+      <dmn11:input id="_23472B97-94C7-4907-9559-403D2CBDA714">
+        <dmn11:inputExpression id="_91E471BE-1EA4-43C4-BDF3-6833B5FEBF18" typeRef="number">
           <dmn11:text>Trigger.triggerId</dmn11:text>
         </dmn11:inputExpression>
       </dmn11:input>
-      <dmn11:output id="_FB3CF4A7-C9DA-4D5B-B78D-A9218D17D769" name="task.id" typeRef="feel:number"/>
-      <dmn11:output id="_d4e0a258-29f6-428c-8555-8d3c4b672f55" name="task.origId" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_a81c9456-5f05-4389-9edd-1fadf73a6721" name="task.predecessor" triso:allowNull="true" typeRef="feel:number"/>
-      <dmn11:output id="_418c9a25-bef7-474f-8fb7-8dda0feb0bfe" name="task.suppressed" triso:allowNull="true" typeRef="feel:boolean"/>
-      <dmn11:output id="_56d2654d-b7ad-412f-8afa-d705f0197c80" name="task.suppressionPeriod" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_bf4965cd-8d91-4c4b-b7ce-0be3483068d0" name="task.expirationDate" triso:allowNull="true" typeRef="feel:dateTime"/>
-      <dmn11:output id="_c08fd1f7-ec4d-4534-ae5c-0ab77315d3bc" name="task.description" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_5f8b1495-640d-4e56-a129-150a5b6e7c37" name="task.reminderInitiation" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_26ce0694-8619-423f-b9e7-3d9ec739e300" name="task.reminderFrequency" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_f39e5f4b-d916-4292-b428-4bec9cef584e" name="task.escalationTimer" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_1a2281fa-f855-463e-a0cf-797064e93c6e" name="task.close" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_DBBC28D5-7117-4F3B-9F7B-FFFF2902E922" name="assignment.actor" typeRef="feel:string"/>
-      <dmn11:output id="_e8dbd64d-8b78-41cc-a6c3-8894dbcb368d" name="assignment.escalationActor" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_1E9AB423-E60F-4173-905E-DDE85721269A" name="reminder.address" typeRef="feel:string"/>
-      <dmn11:output id="_907ffb0a-13ab-414a-90e9-8cfadc2bc673" name="reminder.from" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_31184a02-0687-4193-b6d5-42d8ec6081cd" name="reminder.subject" triso:allowNull="true" typeRef="feel:string"/>
-      <dmn11:output id="_a71dca49-d176-4500-95e3-3629e2588382" name="reminder.body" triso:allowNull="true" typeRef="feel:string"/>
+      <dmn11:output id="_FB3CF4A7-C9DA-4D5B-B78D-A9218D17D769" name="task.id" typeRef="number"/>
+      <dmn11:output id="_d4e0a258-29f6-428c-8555-8d3c4b672f55" name="task.origId" typeRef="string"/>
+      <dmn11:output id="_a81c9456-5f05-4389-9edd-1fadf73a6721" name="task.predecessor" typeRef="number"/>
+      <dmn11:output id="_418c9a25-bef7-474f-8fb7-8dda0feb0bfe" name="task.suppressed" typeRef="boolean"/>
+      <dmn11:output id="_56d2654d-b7ad-412f-8afa-d705f0197c80" name="task.suppressionPeriod" typeRef="string"/>
+      <dmn11:output id="_bf4965cd-8d91-4c4b-b7ce-0be3483068d0" name="task.expirationDate" typeRef="dateTime"/>
+      <dmn11:output id="_c08fd1f7-ec4d-4534-ae5c-0ab77315d3bc" name="task.description" typeRef="string"/>
+      <dmn11:output id="_5f8b1495-640d-4e56-a129-150a5b6e7c37" name="task.reminderInitiation" typeRef="string"/>
+      <dmn11:output id="_26ce0694-8619-423f-b9e7-3d9ec739e300" name="task.reminderFrequency" typeRef="string"/>
+      <dmn11:output id="_f39e5f4b-d916-4292-b428-4bec9cef584e" name="task.escalationTimer" typeRef="string"/>
+      <dmn11:output id="_1a2281fa-f855-463e-a0cf-797064e93c6e" name="task.close" typeRef="string"/>
+      <dmn11:output id="_DBBC28D5-7117-4F3B-9F7B-FFFF2902E922" name="assignment.actor" typeRef="string"/>
+      <dmn11:output id="_e8dbd64d-8b78-41cc-a6c3-8894dbcb368d" name="assignment.escalationActor" typeRef="string"/>
+      <dmn11:output id="_1E9AB423-E60F-4173-905E-DDE85721269A" name="reminder.address" typeRef="string"/>
+      <dmn11:output id="_907ffb0a-13ab-414a-90e9-8cfadc2bc673" name="reminder.from" typeRef="string"/>
+      <dmn11:output id="_31184a02-0687-4193-b6d5-42d8ec6081cd" name="reminder.subject" typeRef="string"/>
+      <dmn11:output id="_a71dca49-d176-4500-95e3-3629e2588382" name="reminder.body" typeRef="string"/>
       <dmn11:rule id="_BE0CA29B-5E41-4476-9BDD-A57DA4A14387">
         <dmn11:inputEntry id="_7A88D06F-8C49-4916-A518-88E891632E1D">
           <dmn11:text>"xyz"</dmn11:text>
@@ -154,13 +145,13 @@
           <dmn11:text>"A490.0"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_47335803-3fb4-4987-91a6-19b756fe04fc">
-          <dmn11:text/>
+          <dmn11:text>-1</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_70557063-d941-485b-9205-bfe849e29a70">
           <dmn11:text>false</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_d1f6bd1c-c127-4732-9186-2b2bacb63263">
-          <dmn11:text/>
+          <dmn11:text>""</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_215b06f4-b3f7-456e-a313-9c9044c0a358">
           <dmn11:text>date(2020,12,31)</dmn11:text>
@@ -213,13 +204,13 @@
           <dmn11:text>"B143"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_90f0aa5e-a1ed-4627-857e-6fd31a61696f">
-          <dmn11:text/>
+          <dmn11:text>-1</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_1678a214-6187-4e3f-913b-f8b2d1359825">
           <dmn11:text>false</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_41775585-309b-4e4f-934e-349c7ac8b159">
-          <dmn11:text/>
+          <dmn11:text>""</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_85919018-e72d-4383-90ce-cbcec1e86433">
           <dmn11:text>date(2020,12,31)</dmn11:text>
@@ -278,7 +269,7 @@
           <dmn11:text>false</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_b16cf301-ebb3-4f6e-b655-1feacd01c113">
-          <dmn11:text/>
+          <dmn11:text>""</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_b9c8cf17-b406-4470-abbc-5d935c354192">
           <dmn11:text>date(2020,12,31)</dmn11:text>
@@ -337,7 +328,7 @@
           <dmn11:text>false</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_ae3cee42-1870-45a1-a249-d3510c412e0d">
-          <dmn11:text/>
+          <dmn11:text>""</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_3e5311ff-14e9-4178-8f11-e66b96481e64">
           <dmn11:text>date(2020,12,31)</dmn11:text>
@@ -390,13 +381,13 @@
           <dmn11:text>"C123.0"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_6f19ed2e-36f0-455d-9477-0f18e976cff3">
-          <dmn11:text/>
+          <dmn11:text>-1</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_9debc5de-ac43-4153-a9a5-841b4cbc5138">
           <dmn11:text>false</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_62501153-6462-4bc6-b78b-d2f3fdd3abc4">
-          <dmn11:text/>
+          <dmn11:text>""</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_05fba6e8-a0c0-48b9-a027-880667bb7130">
           <dmn11:text>date(2020,12,31)</dmn11:text>
@@ -449,13 +440,13 @@
           <dmn11:text>"B104"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_317800d2-dad6-40a6-96e3-13ebdc24fd9e">
-          <dmn11:text/>
+          <dmn11:text>-1</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_3db132d0-d51a-4f66-b45a-b7a1f237f4a9">
           <dmn11:text>false</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_e9ef1456-da1a-4f68-98a0-bdc4dbeaa891">
-          <dmn11:text/>
+          <dmn11:text>""</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_b032d656-579d-42d1-a9a3-ef0311e6015c">
           <dmn11:text>date(2020,12,31)</dmn11:text>
@@ -496,4 +487,57 @@
       </dmn11:rule>
     </dmn11:decisionTable>
   </dmn11:decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_3CE67F44-48F1-4C02-850F-2F4DA7967A75">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>170.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>216.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-_4E22A7A0-5A19-4E6A-A4EB-55A534271EFD" dmnElementRef="_4E22A7A0-5A19-4E6A-A4EB-55A534271EFD" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="304" y="400" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_0A900ACC-C5C2-47DD-B7E1-3F198824C02A" dmnElementRef="_0A900ACC-C5C2-47DD-B7E1-3F198824C02A" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="304" y="187" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_8772D2DD-B655-40F8-A085-15054F00DFE3" dmnElementRef="_8772D2DD-B655-40F8-A085-15054F00DFE3">
+        <di:waypoint x="354" y="425"/>
+        <di:waypoint x="354" y="212"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
 </dmn11:definitions>
