@@ -145,7 +145,7 @@
           <dmn11:text>"A490.0"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_47335803-3fb4-4987-91a6-19b756fe04fc">
-          <dmn11:text>-1</dmn11:text>
+          <dmn11:text></dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_70557063-d941-485b-9205-bfe849e29a70">
           <dmn11:text>false</dmn11:text>
@@ -204,7 +204,7 @@
           <dmn11:text>"B143"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_90f0aa5e-a1ed-4627-857e-6fd31a61696f">
-          <dmn11:text>-1</dmn11:text>
+          <dmn11:text></dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_1678a214-6187-4e3f-913b-f8b2d1359825">
           <dmn11:text>false</dmn11:text>
@@ -381,7 +381,7 @@
           <dmn11:text>"C123.0"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_6f19ed2e-36f0-455d-9477-0f18e976cff3">
-          <dmn11:text>-1</dmn11:text>
+          <dmn11:text></dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_9debc5de-ac43-4153-a9a5-841b4cbc5138">
           <dmn11:text>false</dmn11:text>
@@ -440,7 +440,7 @@
           <dmn11:text>"B104"</dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_317800d2-dad6-40a6-96e3-13ebdc24fd9e">
-          <dmn11:text>-1</dmn11:text>
+          <dmn11:text></dmn11:text>
         </dmn11:outputEntry>
         <dmn11:outputEntry id="_3db132d0-d51a-4f66-b45a-b7a1f237f4a9">
           <dmn11:text>false</dmn11:text>
@@ -531,12 +531,12 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="304" y="187" width="100" height="50"/>
+        <dc:Bounds x="304" y="192" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_8772D2DD-B655-40F8-A085-15054F00DFE3" dmnElementRef="_8772D2DD-B655-40F8-A085-15054F00DFE3">
         <di:waypoint x="354" y="425"/>
-        <di:waypoint x="354" y="212"/>
+        <di:waypoint x="354" y="217"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
